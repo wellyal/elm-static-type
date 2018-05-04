@@ -1,0 +1,28 @@
+var _user$project$Main$volume = function (s) {
+	var _p0 = s;
+	switch (_p0.ctor) {
+		case 'Sphere':
+			return ((4 / 3) * _elm_lang$core$Basics$pi) * Math.pow(_p0._0.radius, 3);
+		case 'Box':
+			return (_p0._0.length * _p0._0.height) * _p0._0.thickness;
+		default:
+			return ((_elm_lang$core$Basics$pi * Math.pow(_p0._0.radius, 2)) * _p0._0.height) / 3;
+	}
+};
+var _user$project$Main$Cone = function (a) {
+	return {ctor: 'Cone', _0: a};
+};
+var _user$project$Main$cone = _user$project$Main$Cone(
+	{height: 2, radius: 1});
+var _user$project$Main$Box = function (a) {
+	return {ctor: 'Box', _0: a};
+};
+var _user$project$Main$box = _user$project$Main$Box(
+	{length: 1, height: 2, thickness: 3});
+var _user$project$Main$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
+	_elm_lang$html$Html$text(
+		_elm_lang$core$Basics$toString(
+			_user$project$Main$volume(_user$project$Main$box))));
+var _user$project$Main$Sphere = function (a) {
+	return {ctor: 'Sphere', _0: a};
+};

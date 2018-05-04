@@ -1,0 +1,15 @@
+var _user$project$Repl$will = {name: 'Will', age: 22};
+var _user$project$Repl$t_s_o_l = {ctor: '_Tuple0'};
+var _user$project$Repl$joe = {name: 'Joe', age: 20};
+var _user$project$Repl$l1 = {
+	ctor: '::',
+	_0: _user$project$Repl$joe,
+	_1: {
+		ctor: '::',
+		_0: _user$project$Repl$will,
+		_1: {ctor: '[]'}
+	}
+};
+var _user$project$Repl$d_e_l_t_r_o_n_3_0_3_0 = function (_) {
+	return _.name;
+};
